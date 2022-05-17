@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Example />
-    <Example />
+    <ProperExample />
+    <ProperExample />
   </div>
 </template>
