@@ -1,12 +1,12 @@
 const brokenRef = new ref(null);
 
-export const useBroken = () => {
-    if (!brokenRef.value) {
-        brokenRef.value = {
-            val: Math.random(),
-            time: Date.now()
-        }
+if (!brokenRef.value) {
+    brokenRef.value = {
+        val: Math.random(),
+        time: Date.now()
     }
+}
 
+export const useBroken = () => {
     return brokenRef.value;
 }
