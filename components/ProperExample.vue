@@ -1,13 +1,9 @@
+<script setup>
+const color = useColor() // Same as useState('color')
+</script>
+
 <template>
-  <p>{{ test }}</p>
-  <button @click="test = 'bar'">
-    Change
-  </button>
+  <p>Current color: {{ color }}</p>
+  <button @click="color = 'red'">Change</button>
 </template>
 
-<script setup>
-
-import {useProper} from "../composables/proper";
-
-const test = useProper();
-</script>
