@@ -8,5 +8,5 @@ export const useBroken = () => {
         }
     }
 
-    return brokenRef;
+    return brokenRef.value;
 }
